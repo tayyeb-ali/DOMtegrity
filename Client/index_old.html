@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<script src="code.js"></script>
+	
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body>
+	<form action="https://10.8.144.90:8080/process_post" method="POST" id="msform">
+		<!-- progressbar 10.8.144.90:8080-->
+		<ul id="progressbar">
+			<li class="active">Sign In</li>
+			<li>Legal Agreement</li>
+			<li>Money Transfer</li>
+			<li>Confirmation</li>
+		</ul>
+		<div id="demo">
+			<h2>This is a trap for malicious extensions</h2>
+		</div>
+		<!-- The Steps -->
+		<fieldset>
+			<h2> Log In </h2>
+			<br> First Name:
+			<input id="username" type="Username">
+			<br> Last Name:
+			<input id="password" type="Password">
+			<input id="buttonTest" class="action-button next" value="Sign in" type="button">
+		</fieldset>
+	</form>
+	<!--<iframe id = "iframe1" src="captcha.html" sandbox="allow-scripts allow-same-origin"></iframe> -->
+	<!--<script src="js/pid-symetric.js"></script>-->
+	<!--<script src="js/pid.js"></script>-->
+	<script>
+	//document.foo = 'team12';
+	//document.body.style.backgroundColor="green";
+
+
+
+	document.getElementById("buttonTest").addEventListener("click", function(e) {
+		e.stopImmediatePropagation();
+
+		document.pid.request();
+	});
+	</script>
+</body>
+
+</html>

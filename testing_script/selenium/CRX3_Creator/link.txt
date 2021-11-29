@@ -1,0 +1,3 @@
+https://github.com/pawliczka/CRX3-Creator
+Please run:
+pip install -r requirements.txt

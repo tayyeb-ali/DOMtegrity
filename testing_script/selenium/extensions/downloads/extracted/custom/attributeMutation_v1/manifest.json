@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "attributeMutation_v1",
+  "version": "0.1.0",
+  "description": "AttributeMutation v1",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "run_at": "document_end",
+	  "matches": ["http://localhost:8080/*", "https://localhost:8080/*"]
+  }]
+}

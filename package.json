@@ -1,0 +1,22 @@
+{
+  "name": "domtegrity-master",
+  "version": "1.0.0",
+  "description": "Mutation Change Test",
+  "main": "domtegrity-server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^0.0.3",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "ws": "^1.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<script src="code.js"></script>
+
+	<meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="div1">
+    First Name:
+    <input id="first_name" type="text">
+    <br> Last Name:
+    <input id="last_name" type="text">
+    <input id="buttonTest" value="Submit" type="button">
+    </div>
+
+    <script>
+
+
+    //document.foo = 'team12';
+    //document.body.style.backgroundColor="green";
+    document.getElementById("buttonTest").addEventListener("click",function(e)
+        {
+            e.stopImmediatePropagation();
+            //console.log(e.isTrusted);
+            
+            document.pid.request();
+        });
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Modify CSS and HTML",
+  "version": "0.1.0",
+  "description": "demo extension",
+  "content_scripts": [{
+    "js": ["content.js"],
+    "run_at": "document_end",
+	  "matches": ["http://localhost:8080/*", "https://localhost:8080/*"]
+  }]
+}
